@@ -192,7 +192,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Movie Channel', url='https://t.me/DKBOTZ'),
+            InlineKeyboardButton('Movie Channel', url='https://t.me/onlymovie76'),
             InlineKeyboardButton('Master', url='https://t.me/JACKBRO007')
         ]
         ]
