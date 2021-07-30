@@ -1,8 +1,10 @@
 {
     "name": "Media Search bot",
-    "description": "When you going to send file on telegram channel/group this bot will save that in database, So you can search that easily in inline mode",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
+      "auto-filter",
+      "filter",
       "best",
       "indian",
       "pyrogram",
@@ -12,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Mahesh0253/Media-Search-bot",
-    "repository": "https://github.com/Mahesh0253/Media-Search-bot",
+    "website": "https://github.com/deepukumarpuri/Media-Search-bot",
+    "repository": "https://github.com/deepukumarpuri/Media-Search-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -41,18 +43,33 @@
             "required": false
         },
         "AUTH_CHANNEL": {
-            "description": "Username or ID of channel. Without subscribing this channel users cannot use bot.",
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "value": "",
             "required": false
         },
-        "INVITE_MSG": {
-            "description": "Auth channel invitation message",
-            "value": "'Please join @.... to use this bot'",
+        "START_MSG": {
+            "description": "Welcome message for start command",
+            "value": "**Hi, I'm [Media Search Bot](https://github.com/subinps/Media-Search-bot) or you can call me as Auto-Filter Bot**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
             "required": false
         },
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
             "value": "False",
+            "required": false
+        },
+        "OMDB_API_KEY": {
+            "description": "Your OMBD API KEY, Fill if you want to generate a imdb poster of movie in autofilter.",
+            "value": "",
+            "required": false
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
+            "value": "",
+            "required": false
+        },
+        "AUTH_GROUPS": {
+            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
+            "value": "",
             "required": false
         },
         "DATABASE_URI": {
@@ -66,11 +83,6 @@
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
-            "required": false
-        },
-        "MAX_RESULTS": {
-            "description": "Maximum limit for inline search results",
-            "value": "10",
             "required": false
         },
         "CACHE_TIME": {
