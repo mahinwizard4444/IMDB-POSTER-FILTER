@@ -276,7 +276,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('OWNER', url='https://t.me/DKBOTZ')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/DKBOTZ'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/DKBOTZ'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/DKBOTZHELP'>Click here</a>\nUpdate Channel : <a href='https://t.me/DKBOTZ'>DK BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('More Bots', url='https://t.me/DKBOTZ'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('More Bots', url='https://t.me/DKBOTZ'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ')
                     ]
                     ]
                 
