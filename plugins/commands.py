@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/DKBOTZ")
+                        InlineKeyboardButton("CLICK HERE", url="https://t.me/onlyarchives76")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ'),
-            InlineKeyboardButton('OWNER', url='https://t.me/DKBOTZHELP')
+            InlineKeyboardButton('Series Channel', url='https://t.me/onlyseries76'),
+            InlineKeyboardButton('OWNER', url='https://t.me/Jackbro007')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/DKBOTZHELP'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/DKBOTZHELP'>Click here</a>\nUpdate Channel : <a href='https://t.me/DKBOTZ'>DK Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/Jackbro007'>JACK</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/Jackbro007'>Click here</a>\nMovie Channel : <a href='https://t.me/onlymovie76'>New Released movie</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
